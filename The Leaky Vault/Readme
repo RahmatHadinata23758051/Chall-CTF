@@ -1,0 +1,5 @@
+Judul: The Leaky Vault
+Deskripsi:
+Kami menemukan sebuah sistem IoT yang menggunakan ECDSA untuk menandatangani instruksi. Sayangnya, generator angka acak (RNG) mereka memiliki kelemahan: 12 bit teratas dari setiap nilai nonce ($k$) selalu nol. 
+Kami berhasil menangkap 100 paket tanda tangan. Bisakah kamu memulihkan kunci privatnya dan membaca flag?
+Flag Format: iet{...}
