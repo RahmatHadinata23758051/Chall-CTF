@@ -11,27 +11,17 @@ What you have here is a local oracle from the same rotten cult of benchmark addi
 No extra files. No remote service. No excuses. If you want the answer, stop roleplaying as a prompt engineer and actually tear the thing apart.
 
 Files:
-- `oracle.py`
-- `run.sh`
-- `run.bat`
+- `prompt_necromancy`
 
 Run it, genius:
 
 ```bash
-chmod +x run.sh
-./run.sh
+chmod +x prompt_necromancy
+./prompt_necromancy
 ```
 
 Then pick a room id and type your trash prompt when it asks.
 
-Or if touching the interactive wrapper is somehow too advanced for you:
-
 ```bash
-python3 oracle.py "your trash query here"
-```
-
-On Windows, try not to embarrass yourself:
-
-```bat
-run.bat
+./prompt_necromancy "your trash query here"
 ```
