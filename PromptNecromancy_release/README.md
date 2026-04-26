@@ -11,18 +11,27 @@ What you have here is a local oracle from the same rotten cult of benchmark addi
 No extra files. No remote service. No excuses. If you want the answer, stop roleplaying as a prompt engineer and actually tear the thing apart.
 
 Files:
-- `oracle.pyc`
+- `oracle.py`
 - `run.sh`
+- `run.bat`
 
 Run it, genius:
 
 ```bash
 chmod +x run.sh
-./run.sh "your trash query here"
+./run.sh
 ```
 
-Or if touching a shell script is somehow too advanced for you:
+Then pick a room id and type your trash prompt when it asks.
+
+Or if touching the interactive wrapper is somehow too advanced for you:
 
 ```bash
-python3 oracle.pyc "your trash query here"
+python3 oracle.py "your trash query here"
+```
+
+On Windows, try not to embarrass yourself:
+
+```bat
+run.bat
 ```

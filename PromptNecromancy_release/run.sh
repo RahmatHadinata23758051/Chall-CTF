@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-python3 oracle.pyc "$@"
+python3 oracle.py "$@"
