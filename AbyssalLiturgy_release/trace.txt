@@ -1,0 +1,67 @@
+execve("./abyssal_liturgy", ["./abyssal_liturgy"], 0x7fff858d2420 /* 48 vars */) = 0
+brk(NULL)                               = 0x63255abec000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7a7b0d1e2000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=102435, ...}) = 0
+mmap(NULL, 102435, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7a7b0d1c8000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=183024, ...}) = 0
+mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7a7b0d19a000
+mmap(0x7a7b0d19e000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7a7b0d19e000
+mmap(0x7a7b0d1c2000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7a7b0d1c2000
+mmap(0x7a7b0d1c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7a7b0d1c6000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7a7b0ce00000
+mmap(0x7a7b0ce28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7a7b0ce28000
+mmap(0x7a7b0cfb0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7a7b0cfb0000
+mmap(0x7a7b0cfff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7a7b0cfff000
+mmap(0x7a7b0d005000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7a7b0d005000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7a7b0d197000
+arch_prctl(ARCH_SET_FS, 0x7a7b0d197780) = 0
+set_tid_address(0x7a7b0d197a50)         = 19732
+set_robust_list(0x7a7b0d197a60, 24)     = 0
+rseq(0x7a7b0d1980a0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7a7b0cfff000, 16384, PROT_READ) = 0
+mprotect(0x7a7b0d1c6000, 4096, PROT_READ) = 0
+mprotect(0x632546949000, 12288, PROT_READ) = 0
+mprotect(0x7a7b0d21a000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7a7b0d1c8000, 102435)          = 0
+poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7a7b0ce45330}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x63254690def0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7a7b0ce45330}, NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x63254690def0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7a7b0ce45330}, NULL, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7a7b0d1df000
+mprotect(0x7a7b0d1df000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7a7b0d1e0000, ss_flags=0, ss_size=8192}, NULL) = 0
+getrandom("\xd2\xfb\xc9\xf1\xad\xca\x88\x0f", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x63255abec000
+brk(0x63255ac0d000)                     = 0x63255ac0d000
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "6325468f3000-6325468f7000 r--p 0"..., 1024) = 1024
+read(3, "0-7a7b0cfff000 r--p 001b0000 08:"..., 1024) = 1024
+read(3, " 0 \n7a7b0d1e0000-7a7b0d1e4000 rw"..., 1024) = 894
+close(3)                                = 0
+sched_getaffinity(19732, 32, [0 1 2 3 4 5 6 7 8 9 10 11]) = 8
+read(0, "ABCDEFGH\n", 32)               = 9
+read(0, "", 23)                         = 0
+ptrace(PTRACE_TRACEME)                  = -1 EPERM (Operation not permitted)
+write(1, "Access denied.\n", 15)        = 15
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7a7b0d1df000, 12288)           = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
