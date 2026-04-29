@@ -1,0 +1,7 @@
+2026-04-14T09:10:01Z boot companion=VX-CM3 device=VX-441-AURORA fw=3.7.12
+2026-04-14T09:10:02Z imu gyro_bias_mdps=[-14,23,8] accel_bias_mg=[3,-1,2]
+2026-04-14T09:10:03Z link uplink steady phase_order=firmware,ascent,transit,footer
+2026-04-14T09:10:07Z mission ascent relay nominal seq_hint=2
+2026-04-14T09:10:11Z mission transit relay jitter seq_hint=7
+2026-04-14T09:10:14Z mission footer pending seq_hint=9
+2026-04-14T09:10:16Z note stale crc32 worksheet ignored by field team

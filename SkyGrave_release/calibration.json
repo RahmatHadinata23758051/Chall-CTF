@@ -1,0 +1,29 @@
+{
+  "device_id": "VX-441-AURORA",
+  "imu": {
+    "gyro_bias_mdps": [
+      -14,
+      23,
+      8
+    ],
+    "accel_bias_mg": [
+      3,
+      -1,
+      2
+    ],
+    "mag_trim": [
+      11,
+      -4,
+      19
+    ]
+  },
+  "rf": {
+    "whitening_profile": "legacy-a5",
+    "channel_hop": [
+      4,
+      8,
+      2,
+      9
+    ]
+  }
+}
