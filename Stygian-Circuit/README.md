@@ -1,10 +1,7 @@
 # Stygian Circuit
 
-Duh, masih aja di sini? Kirain udah nyerah pas liat folder-nya. 
+Sebuah labirin sinyal yang saling bersilangan. Kalau lu masih nyari alur linear buat di-trace, mending balik main tebak-tebakan kata aja. Semuanya bergerak barengan dalam kebisingan asinkron yang nggak bakal bisa dipahami sama otak yang cuma terbiasa liat permukaan.
 
-Dengerin ya, rev Go itu bukan buat bocil yang modal `strings` doang. Kalau lu masih berharap ada `CheckFlag` yang tinggal lu pencet F5 di Hex-Rays terus kelar, mending lu balik main Zuma aja atau ngerjain soal Web yang tinggal `ctrl+u`.
-
-Di sini, setiap bit input lu bakal dilempar ke lautan goroutine yang nggak ada ujungnya. Lu bakal pusing sendiri nyari mana yang bener, mana yang cuma sampah asinkron. 
-
-Nggak usah sok keras mau nge-trace pakai GDB. Go runtime bakal bikin hidup lu kayak di neraka. 
-
+**File:** `stygian`
+**Format Flag:** `iet{...}`
+**Level:** Insane
